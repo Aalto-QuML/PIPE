@@ -1,4 +1,8 @@
-# PE_PH
+# Positional Encoding meets Persistent Homology on Graphs
+
+ [Yogesh Verma](https://yoverma.github.io/yoerma.github.io/) | [Amauri H. Souza](https://www.amauriholanda.org)  |  [Vikas Garg](https://www.mit.edu/~vgarg/)
+
+The repository is developed on the intersection of [RePHINE](https://github.com/Aalto-QuML/RePHINE), and [SPE](https://github.com/Graph-COM/SPE). Please refer to their repos for specific requirements.
 
 To run the SPE with VC/RePHINE run
 
