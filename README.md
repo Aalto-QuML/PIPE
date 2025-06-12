@@ -4,6 +4,9 @@
 
 The repository is developed on the intersection of [RePHINE](https://github.com/Aalto-QuML/RePHINE), and [SPE](https://github.com/Graph-COM/SPE). Please refer to their repos for specific requirements.
 
+<p align="center">
+  <img src="https://github.com/Aalto-QuML/PIPE/blob/main/pipe_2d.png" />
+</p>
 
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
