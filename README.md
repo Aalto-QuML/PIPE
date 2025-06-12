@@ -8,6 +8,17 @@ The repository is developed on the intersection of [RePHINE](https://github.com/
   <img src="https://github.com/Aalto-QuML/PIPE/blob/main/pipe_2d.png" />
 </p>
 
+## Training
+
+To run the method on ZINC or Alchemy, do the following:
+
+```
+cd SPE/zinc/ or SPE/alchemy
+python -u runner.py --config_dirpath ../configs/alchemy (or zinc) --config_name SPE_gine_gin_mlp_pe37.yaml --seed 0
+```
+
+One can change the type of PE method in the config files.
+
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
  ```
@@ -19,14 +30,3 @@ booktitle={The Twelfth International Conference on Machine Learning},
 year={2025}
 }
 ```
-
-## Training
-
-To run the method on ZINC or Alchemy, do the following:
-
-```
-cd SPE/zinc/ or SPE/alchemy
-python -u runner.py --config_dirpath ../configs/alchemy (or zinc) --config_name SPE_gine_gin_mlp_pe37.yaml --seed 0
-```
-
-One can change the type of PE method in the config files.
