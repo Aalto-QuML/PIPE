@@ -11,7 +11,7 @@ from src.deepsets import DeepSets
 from src.mlp import MLP
 from src.stable_expressive_pe import StableExpressivePE, MaskedStableExpressivePE, GetPhi, GetPsi
 from src.sign_inv_pe import SignInvPe, BasisInvPE, IGNBasisInv, MaskedSignInvPe
-from src.vanilla_pe import IdPE
+from src.vanilla_pe import IdPE, RWPE
 from src.gin import GIN
 from src.pna import PNA
 from src.schema import Schema
@@ -103,6 +103,9 @@ def construct_model(cfg: Schema, list_create_mlp, **kwargs): # a list of mlp cre
                      pe_aggregate=None, feature_type = kwargs.get("feature_type"))
     elif cfg.pe_method == 'id':
         return Model(cfg.n_node_types, cfg.node_emb_dims, positional_encoding=IdPE(cfg.pe_dims), base_model=base_model,
+                     pe_aggregate=cfg.pe_aggregate, feature_type = kwargs.get("feature_type"))
+    elif cfg.pe_method == 'rw':
+        return Model(cfg.n_node_types, cfg.node_emb_dims, positional_encoding=RWPE(cfg.pe_dims), base_model=base_model,
                      pe_aggregate=cfg.pe_aggregate, feature_type = kwargs.get("feature_type"))
     else:
         raise Exception("PE method not implemented!")
