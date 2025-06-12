@@ -69,7 +69,7 @@ class GINELayer(MessagePassing):
                             nn.Linear(n_edge_types, in_dims)
         # self.pe_embedding = nn.Linear(1, in_dims)
         # self.pe_embedding = create_mlp(1, in_dims) # for peg
-        self.pe_embedding = create_mlp(37, in_dims) # for pe-full
+        self.pe_embedding = create_mlp(37, in_dims) # CHange here depending on type of PE. 
         self.eps = torch.nn.Parameter(data=torch.randn(1), requires_grad=True)
         self.mlp = create_mlp(in_dims, out_dims)
 
