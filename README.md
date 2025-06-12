@@ -26,7 +26,7 @@ If you find this repository useful in your research, please consider citing the 
 pipe,
 title={Positional Encoding meets Persistent Homology on Graphs},
 author={Verma, Yogesh and Souza, Amauri H and Garg, Vikas},
-booktitle={The Twelfth International Conference on Machine Learning},
+booktitle={The Forty Second International Conference on Machine Learning},
 year={2025}
 }
 ```
