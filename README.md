@@ -15,7 +15,6 @@ author={Verma, Yogesh and Souza, Amauri H and Garg, Vikas},
 booktitle={The Twelfth International Conference on Machine Learning},
 year={2025}
 }
-
 ```
 
 ## Training
